@@ -24,9 +24,9 @@ export const EthWallet = ({ mnemonic }) => {
     };
 
     return (
-        <div className="p-5 bg-gray-100">
+        <div className="p-5 ">
             <button
-                className="bg-blue-500 text-white py-2 px-4 rounded mb-4"
+                className="border text-white py-2 px-4 rounded mb-4"
                 onClick={addEthWallet}
             >
                 Add Ethereum Wallet
@@ -47,7 +47,7 @@ export const EthWallet = ({ mnemonic }) => {
                                 <strong>Private Key:</strong> {wallet.privateKey}
                             </p>
                             <button
-                                className="bg-red-500 text-white py-1 px-3 mt-2 rounded"
+                                className="bg-yellow-500 text-white py-1 px-3 mt-2 rounded"
                                 onClick={() => deleteEthWallet(index)}
                             >
                                 Delete Wallet
